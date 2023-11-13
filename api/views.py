@@ -22,8 +22,8 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 @app.get('/', name='index')
-def get_index():
-    return("Index page")
+def get_index(request: Request):
+    return templates.TemplateResponse("index.html",{"request": request})
 
 
 
