@@ -1,0 +1,43 @@
+# Virtual Environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables file
+.env
+
+# Local development settings
+.local/
+
+# IDE (e.g., PyCharm) settings
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Visual Studio Code settings
+.vscode/
+
+# Logs
+logs/
+
+# Ignore Python environments
+/.python-version
+.Python
+pip-log.txt
+
+# Ignore virtualenvs
+/.venv/
+

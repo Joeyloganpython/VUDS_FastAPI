@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+    <h1>Upload Data</h1>
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('process_uploadall') }}">
+        <h2>Tracing</h2>
+        <label for="tracing_file">Tracing File (Upload a .txt file):</label>
+        <input type="file" name="tracing_file" id="tracing_file" accept=".txt"><br>
+        <label for="ebc">EBC:</label>
+        <input type="number" name="ebc" id="ebc"><br>
+
+        <label for="dicom_file">Dicom or ZIP File (Upload a .dcm or .zip file):</label>
+        <input type="file" name="dicom_file" id="dicom_file" accept=".dcm, .zip"><br>
+
+
+
+
+
+    
+        <input type="submit" value="Submit">
+    </form>
+    {% if results|length > 0 %}
+        <p>Y array Results</p><br>
+        <p>{{ results }}</p>
+
+    {% endif %}
+{% endblock %}
